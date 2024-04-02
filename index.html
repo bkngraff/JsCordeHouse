@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Nota Final</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <h1>Calculadora de Nota Final</h1>
+        <form id="formulario-nota">
+            <label for="nombre-alumno">Nombre del alumno:</label>
+            <input type="text" id="nombre-alumno" name="nombre-alumno">
+            <label for="nota-parcial1">Nota del primer parcial:</label>
+            <input type="number" id="nota-parcial1" name="nota-parcial1">
+            <label for="nota-parcial2">Nota del segundo parcial:</label>
+            <input type="number" id="nota-parcial2" name="nota-parcial2">
+            <label for="nota-examen-final">Nota del examen final:</label>
+            <input type="number" id="nota-examen-final" name="nota-examen-final">
+            <div id="btn-calcular" onclick="confirmar()">Click</div>
+        </form>
+        <div id="resultados-nota">
+            <h2>Resultados</h2>
+            <p>Nombre del alumno: <span id="nombre-alumno-resultado"></span></p>
+            <p>Nota final: <span id="nota-final"></span></p>
+            <p>Estado: <span id="estado"></span></p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
